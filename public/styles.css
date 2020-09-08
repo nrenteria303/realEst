@@ -1,0 +1,113 @@
+body, html {
+    background-color: #320E3B;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    width: 98;
+    color: #e6fbff;
+    background-color: #320E3B;
+    /* border-bottom: white solid 2px; */
+    z-index: 10;
+}
+
+#header_inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    padding: 36px 20px 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    align-self: center;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 3.25rem;
+}
+
+.heading-thin {
+    font-weight: 100;
+    text-decoration: overline;
+}
+
+.heading-bold {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+main {
+    width: 96vw;
+    max-width: 1460px;
+    margin: 0 auto;
+    background-color: #e6fbff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.property-card {
+    min-width: 280px;
+    width: 99%;
+    max-width: 340px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+    border: solid 2px #c0c0c0;
+    transition: 0.2s ease all;
+}
+
+.property-card:hover {
+    box-shadow: 0 0 8px #555;
+}
+
+.property-card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 6px auto 0;
+}
+
+.property-card img {
+    width: 95%;
+    border: solid 1px #000;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bd-br {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.bd-br p {
+    margin: 0 auto;
+}
+
+.desc {
+    padding: 0 16px 10px;
+    margin: 0 auto;;
+}
+
+footer {
+    background-color: #320E3B;
+    color: #e6fbff;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 98vw;
+}

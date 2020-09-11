@@ -4,7 +4,7 @@ function Footer() {
     let year = new Date().getFullYear();
 
     return <footer>
-        <p>Copyright &copy; {year} Nick Renteria Web Development</p>
+        <p>Copyright &copy; {year} <a href="http://nickrenteria.com" target="_blank">Nick Renteria Web Development</a></p>
     </footer>
 }
 

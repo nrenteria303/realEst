@@ -73,7 +73,7 @@ let properties = [
                 alt: "Blue House at 123 Fake St."
             }
         ],
-        price: "$275,000",
+        price: "$575,000",
         bedrooms: 5,
         bathrooms: 4,
         HOA: false,

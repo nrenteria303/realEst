@@ -1,9 +1,7 @@
 import React from 'react';
-import properties from '../data/properties';
 import CardHead from './CardHead';
 
 function Cards(props) {
-    // let property = properties[0];
     return <div className="property-card">
         <CardHead streetInfo={props.streetInfo} />
         <img src={props.mainImgSrc} alt={props.mainImgAlt} />

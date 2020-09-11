@@ -6,16 +6,30 @@ body, html {
 }
 
 header {
-    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 180px;
     width: 98;
     color: #e6fbff;
-    background-color: #320E3B;
+    background-image: url("./imgs/atl_skyline.jpg");
+    background-size: cover;
     /* border-bottom: white solid 2px; */
+    position: relative;
     z-index: 10;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, #320E3B 4%, #320E3B 15%, rgba(48, 13, 57, 0.9) 25%, rgba(48, 13, 57, 0.85) 60%);
+    opacity: 0.85;
 }
 
 #header_inner {
@@ -25,6 +39,8 @@ header {
     padding: 36px 20px 20px;
     height: 100%;
     box-sizing: border-box;
+    position: relative;
+    z-index: 10;
 }
 
 header h1 {
@@ -32,6 +48,7 @@ header h1 {
     align-self: center;
     font-family: 'Gayathri', sans-serif;
     font-size: 3.25rem;
+    text-shadow: 0 0 6px #000;
 }
 
 .heading-thin {
@@ -64,6 +81,7 @@ main {
     margin: 0 auto 30px;
     background-color: #fff;
     border: solid 2px #dbdbdb;
+    border-radius: 4px;
     transition: 0.3s ease all;
 }
 
@@ -130,4 +148,13 @@ footer {
     left: 0;
     right: 0;
     width: 98vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fffadd;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

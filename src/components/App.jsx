@@ -16,6 +16,7 @@ function App() {
             bedrooms={card.bedrooms}
             bathrooms={card.bathrooms}
             description={card.description}
+            sqft={card.sqft}
         />
     }
 

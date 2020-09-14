@@ -91,12 +91,44 @@ main {
 
 .card-head {
     position: relative;
+    z-index: 10;
 }
 
 .card-head h3 {
     text-align: center;
     font-size: 1.5rem;
     margin: 6px auto 0;
+    cursor: pointer;
+}
+
+.img-main {
+    position: relative;
+    cursor: pointer;
+}
+
+.no-hoa {
+    color: #ffffff;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -7px;
+    right: -24px;
+    border-bottom: 50px solid #00d300;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    transform: rotate(45deg);
+}
+
+.no-hoa p {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: relative;
+    right: 22px;
+    bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-shadow: 0 0 4px #000000;
 }
 
 .heart {
@@ -112,6 +144,7 @@ main {
     text-align: center;
     font-size: 1.5rem;
     margin: 6px auto 0;
+    cursor: pointer;
 }
 
 .property-card img {

@@ -13,10 +13,11 @@ let properties = [
                 alt: "Blue House at 123 Fake St."
             }
         ],
-        price: "$250,000",
+        price: 250000,
         bedrooms: 4,
         bathrooms: 3,
         HOA: false,
+        sqft: 1210,
         description: "This is a beautiful colonial home with both carpet and hardwood floors (hardwood under the carpet, genius). Two car garage and cage in backyard for pets or children. Call now for a tour!"
     },
     {
@@ -33,11 +34,12 @@ let properties = [
                 alt: "Blue House at 123 Fake St."
             }
         ],
-        price: "$350,000",
+        price: 750000,
         bedrooms: 4,
         bathrooms: 3.5,
         HOA: false,
-        description: "This is a big ol' shack home with both carpet and hardwood floors (hardwood under the carpet, genius). Two car garage and cage in backyard for pets or children. Call now for a tour!"
+        sqft: 1490,
+        description: "This is a big ol' shack of a home with both carpet and hardwood floors (hardwood under the carpet, genius). Two car garage and cage in backyard for pets or children. Call now for a tour!"
     },
     {
         id: 3,
@@ -53,10 +55,11 @@ let properties = [
                 alt: "Blue House at 123 Fake St."
             }
         ],
-        price: "$199,000",
+        price: 299000,
         bedrooms: 3,
         bathrooms: 2.5,
         HOA: true,
+        sqft: 1050,
         description: "This home has two pools and three gardens, with both carpet and hardwood floors (hardwood under the carpet, genius). Two car garage and cage in backyard for pets or children. Call now for a tour!"
     },
     {
@@ -73,10 +76,11 @@ let properties = [
                 alt: "Blue House at 123 Fake St."
             }
         ],
-        price: "$575,000",
+        price: 1275000,
         bedrooms: 5,
         bathrooms: 4,
         HOA: false,
+        sqft: 2100,
         description: "This is a really, really enormous home with both carpet and hardwood floors (hardwood under the carpet, genius). Two car garage and cage in backyard for pets or children. Call now for a tour!"
     }
 ];

@@ -1,17 +1,22 @@
 import React from 'react';
 import CardHead from './CardHead';
+import CardDetails from './CardDetails';
+import CardImgMain from './CardImgMain';
 
 function Cards(props) {
     return <div className="property-card">
         <CardHead streetInfo={props.streetInfo} />
-        <img src={props.mainImgSrc} alt={props.mainImgAlt} />
-        <h3 className="price">{props.price}</h3>
-        <div className="bd-br">
-            <p>bed: {props.bedrooms}</p>
-            <p>bath: {props.bathrooms}</p>
-            <p>HOA: {props.HOA ? "Yes" : "No"}</p>
-        </div>
-        <p className="desc">{props.description.substring(0, 84)}... <a href="#">read more</a></p>
+        <CardImgMain 
+            HOA={props.HOA} 
+            mainImgSrc={props.mainImgSrc} 
+            mainImgAlt={props.mainImgAlt} />
+        <CardDetails
+            price={props.price}
+            bedrooms={props.bedrooms}
+            bathrooms={props.bathrooms}
+            sqft={props.sqft}
+            description={props.description.substring(0, 80)}
+        />
     </div>
 }
 

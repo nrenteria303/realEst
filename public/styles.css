@@ -10,13 +10,11 @@ header {
     left: 0;
     right: 0;
     height: 180px;
-    width: 98;
     color: #e6fbff;
     background-image: url("./imgs/atl_skyline.jpg");
     background-size: cover;
-    /* border-bottom: white solid 2px; */
     position: relative;
-    z-index: 10;
+    z-index: 1000;
 }
 
 header::after {
@@ -40,7 +38,43 @@ header::after {
     height: 100%;
     box-sizing: border-box;
     position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-expand-btn {
+    border: solid 1px #ffffff;
+    margin: 26px auto 0;
+    cursor: pointer;
+}
+
+.filter-expand-btn h3 {
+    margin: 0 auto;
+    padding: 6px 12px;
+}
+
+.filter-expand-btn svg {
+    position: relative;
+    top: 5px;
+}
+
+#filters-options-cont {
+    height: 360px;
+    width: 90vw;
+    position: absolute;
+    left: 5vw;
+    background-color: rgb(231, 231, 231);
+    transition: 0.6s ease all;
     z-index: 10;
+}
+
+.filters-options-cont-hidden {
+    bottom: 300px;
+ }
+
+.filters-options-cont-showing {
+    bottom: -310px;
 }
 
 header h1 {
@@ -91,7 +125,7 @@ main {
 
 .card-head {
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .card-head h3 {

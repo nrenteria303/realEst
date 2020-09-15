@@ -20,7 +20,7 @@ function CardDetails(props) {
             <p>bath: {props.bathrooms}</p>
             <p>sqft: {props.sqft}</p>
         </div>
-        <p className="desc">{props.description}... <a href="#">read more</a></p>
+        <p className="desc">{props.description}... <a href="https://www.nickrenteria.com">read more</a></p>
     </div>
 }
 

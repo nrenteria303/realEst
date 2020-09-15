@@ -44,45 +44,61 @@ header::after {
     justify-content: space-between;
 }
 
-.filter-expand-btn {
+#filter-expand-btn {
     border: solid 1px #ffffff;
     margin: 26px auto 0;
     cursor: pointer;
 }
 
-.filter-expand-btn h3 {
+#filter-expand-btn h3 {
     margin: 0 auto;
     padding: 6px 12px;
 }
 
-.filter-expand-btn svg {
+#filter-expand-btn svg {
     position: relative;
     top: 5px;
 }
 
+.btn-expanded {
+    background-color: #e6fbff;
+    color: #320E3B;
+}
+
 #filters-options-cont {
-    height: 360px;
     width: 90vw;
     max-width: 420px;
     position: absolute;
-    left: 5vw;
-    background-color: rgb(231, 231, 231);
+    border-radius: 6px;
+    box-sizing: border-box;
+    right: 5vw;
+    background-color: #e6fbff;
+    color: #320E3B;
     transition: 0.6s ease all;
     z-index: 10;
+    overflow: hidden;
 }
 
 .filters-options-cont-hidden {
-    bottom: 300px;
+    bottom: 40px;
+    height: 0;
  }
 
 .filters-options-cont-showing {
-    bottom: -310px;
+    bottom: -320px;
+    height: 360px;
+    border: 2px outset #c0c0c0;
 }
 
 @media (min-width: 700px) {
     #filters-options-cont {
-        left: 42vw;
+        right: 0;
     }
+}
+
+.form-opt {
+    text-align: center;
+    padding: 8px;
 }
 
 header h1 {
@@ -154,20 +170,20 @@ main {
     height: 0;
     width: 0;
     top: -7px;
-    right: -24px;
-    border-bottom: 50px solid #00d300;
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
+    right: -20px;
+    border-bottom: 45px solid #00d300;
+    border-right: 45px solid transparent;
+    border-left: 45px solid transparent;
     transform: rotate(45deg);
 }
 
 .no-hoa p {
-    height: 50px;
     width: 50px;
+    line-height: 1.1;
     text-align: center;
     position: relative;
     right: 22px;
-    bottom: 6px;
+    bottom: 3px;
     font-size: 0.9rem;
     font-weight: 700;
     text-shadow: 0 0 4px #000000;
@@ -176,7 +192,7 @@ main {
 .heart {
     position: absolute;
     color: red;
-    top: -41px;
+    top: -40px;
     right: 16px;
     font-size: 2rem;
     cursor: pointer;

@@ -5,7 +5,11 @@ import FilterHOA from './FilterHOA';
 import FilterSqft from './FilterSqft';
 
 function FilterForm() {
-    return <form>
+    function handleSubmit(e) {
+        e.preventDefault();
+    }
+
+    return <form onSubmit={handleSubmit}>
         <FilterPrice />
         <FilterBedBath />
         <FilterHOA />

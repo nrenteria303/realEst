@@ -285,6 +285,10 @@ footer {
     width: 98vw;
 }
 
+footer p {
+    padding: 0 12px;
+}
+
 footer a {
     text-decoration: none;
     color: #fffadd;

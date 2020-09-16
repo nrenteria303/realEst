@@ -44,6 +44,30 @@ header::after {
     justify-content: space-between;
 }
 
+header h1 {
+    margin: 0;
+    align-self: center;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2.875rem;
+    text-shadow: 0 0 6px #000;
+}
+
+@media (min-width: 370px) {
+    header h1 {
+        font-size: 3.25rem;
+    }
+}
+
+.heading-thin {
+    font-weight: 100;
+    text-decoration: overline;
+}
+
+.heading-bold {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 #filter-expand-btn {
     border: solid 1px #ffffff;
     margin: 26px auto 0;
@@ -66,12 +90,12 @@ header::after {
 }
 
 #filters-options-cont {
-    width: 90vw;
+    width: 84vw;
     max-width: 420px;
     position: absolute;
     border-radius: 6px;
     box-sizing: border-box;
-    right: 5vw;
+    right: 8vw;
     background-color: #e6fbff;
     color: #320E3B;
     transition: 0.6s ease all;
@@ -99,24 +123,44 @@ header::after {
 .form-opt {
     text-align: center;
     padding: 8px;
+    max-width: 86%;
+    margin: 6px auto 0;
 }
 
-header h1 {
-    margin: 0;
-    align-self: center;
-    font-family: 'Gayathri', sans-serif;
-    font-size: 3.25rem;
-    text-shadow: 0 0 6px #000;
+#form-btns {
+    width: 58%;
+    margin: 16px auto 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.heading-thin {
-    font-weight: 100;
-    text-decoration: overline;
-}
-
-.heading-bold {
+#form-btns button {
+    font-size: 1rem;
+    padding: 6px 12px;
     font-weight: 700;
-    text-decoration: underline;
+    cursor: pointer;
+}
+
+#btn-clear {
+    color: #320E3B;
+    background-color: transparent;
+    border: solid 2px #320E3B;
+}
+
+#btn-clear:hover {
+    background-color: #ffffff;
+}
+
+#btn-apply {
+    color: #e6fbff;
+    background-color: #320E3B;
+    border: solid 2px #320E3B;
+}
+
+#btn-apply:hover {
+    background-color: #75248a;
+    color: #ffffff;
+    text-shadow: 0 0 4px #000000;;
 }
 
 main {
@@ -169,7 +213,7 @@ main {
     position: absolute;
     height: 0;
     width: 0;
-    top: -7px;
+    top: -6px;
     right: -20px;
     border-bottom: 45px solid #00d300;
     border-right: 45px solid transparent;

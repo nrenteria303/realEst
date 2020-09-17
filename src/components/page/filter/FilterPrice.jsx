@@ -1,14 +1,54 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function FormPrice() {
-    return <fieldset id="form-price" className="form-opt">
-    <legend>Price</legend>
-                    <div className="max-min">
-                        <input id="price-min" name="price-min" type="number" min="0" max="5000000" step="10000" placeholder="min" />
-                        &nbsp;-&nbsp;
-                        <input id="price-max" name="price-max" type="number" min="0" max="5000000" step="10000" placeholder="max" />
-                    </div>
-                </fieldset>
+function FormPrice(props) {
+    const [price, setPrice] = useState({
+        priceMin: "",
+        priceMax: ""
+    });
+
+    function handleChange(e) {
+        const {name, value} = e.target;
+        setPrice(prevValue => {
+            return {
+                ...prevValue,
+                [name]: value
+            }
+        });
+    }
+
+    function submitPrice(e) {
+        e.preventDefault();
+        props.onApplyPrice(price.priceMin, price.priceMax);
+    }
+    
+    return <fieldset onBlur={submitPrice} id="form-price" className="form-opt">
+                <legend>Price</legend>
+                <div className="max-min">
+                    <input 
+                        id="priceMin" 
+                        name="priceMin" 
+                        type="number" 
+                        min="0" 
+                        max="5000000" 
+                        step="10000" 
+                        placeholder="min" 
+                        value={price.priceMin}
+                        onChange={handleChange}
+                    />
+                    &nbsp;-&nbsp;
+                    <input 
+                        id="priceMax" 
+                        name="priceMax" 
+                        type="number" 
+                        min={price.priceMin !== '' ? price.priceMin : 0} 
+                        max="5000000" 
+                        step="10000" 
+                        placeholder="max" 
+                        value={price.priceMax}
+                        onChange={handleChange}
+                    />
+                </div>
+            </fieldset>
 }
 
 export default FormPrice;

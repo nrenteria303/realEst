@@ -12,7 +12,7 @@ function Filters() {
     }
 
     return  <div className="filter-cont">
-                <div onClick={handleExpandClick} id="filter-expand-btn" className={isExpanded && "btn-expanded"}>
+                <div onClick={handleExpandClick} id="filter-expand-btn" className={isExpanded ? "btn-expanded" : ""}>
                     <h3>Filters {isExpanded ? <RemoveCircleOutlineIcon /> : <AddCircleOutlineIcon />}</h3>
                 </div>
                 <div id="filters-options-cont" className={isExpanded ? "filters-options-cont-showing" : "filters-options-cont-hidden"}>

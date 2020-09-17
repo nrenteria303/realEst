@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function FilterBedBath() {
     return <fieldset id="form-beds-baths" className="form-opt">
                 <legend>Beds &amp; Baths</legend>
                 <div>
-                    <label for="beds-min">beds:</label>
+                    <label htmlFor="beds-min">beds:</label>
                     &nbsp;
                     <select id="beds-min" name="beds-min">
                         <option value="1">1+</option>
@@ -19,7 +19,7 @@ function FilterBedBath() {
                         <option value="10">10+</option>
                     </select>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <label for="baths-min">baths:</label>
+                    <label htmlFor="baths-min">baths:</label>
                     &nbsp;
                     <select id="baths-min" name="baths-min">
                         <option value="1">1+</option>

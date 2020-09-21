@@ -18,6 +18,12 @@ header {
     z-index: 1000;
 }
 
+@media (min-width: 1800px) {
+    header {
+        height: 360px;
+    }
+}
+
 header::after {
     content: '';
     position: absolute;

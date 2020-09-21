@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './page/Header';
 import Footer from './page/Footer';
 import Card from './Card';
 import properties from '../data/properties';
 
 function App() {
+
+    const [filteredProperties, setFilteredProperties] = useState(properties);
+
     function createCard(card) {
         return <Card 
             key={card.id}
@@ -20,13 +23,22 @@ function App() {
         />
     }
 
+    function showHomes(formObj) {
+        let filterCheck = function(item, priceMin, priceMax) {
+            if (item.price < priceMin) return false;
+            if (item.price > priceMax) return false;
+            return true;
+        }
+        let newFilteredProperties = properties.filter(home => {
+            return filterCheck(home, formObj.priceMin, formObj.priceMax);
+        });
+        setFilteredProperties(newFilteredProperties);
+    }
+
     return <div>
-        <Header />
+        <Header passToApp={showHomes} />
         <main>
-            {properties.map(createCard)}
-            {properties.map(createCard)}
-            {properties.map(createCard)}
-            {properties.map(createCard)}
+            {filteredProperties.map(createCard)}
         </main>
         <Footer />
     </div>

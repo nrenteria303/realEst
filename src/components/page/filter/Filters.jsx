@@ -4,11 +4,16 @@ import FilterForm from "./FilterForm";
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 
-function Filters() {
+function Filters(props) {
     const [isExpanded, setIsExpanded] = useState(false);
 
     function handleExpandClick() {
         setIsExpanded(!isExpanded);
+    }
+
+    function submitCriteria(formObj) {
+        setIsExpanded(false);
+        props.passToHeader(formObj);
     }
 
     return  <div className="filter-cont">
@@ -16,7 +21,7 @@ function Filters() {
                     <h3>Filters {isExpanded ? <RemoveCircleOutlineIcon /> : <AddCircleOutlineIcon />}</h3>
                 </div>
                 <div id="filters-options-cont" className={isExpanded ? "filters-options-cont-showing" : "filters-options-cont-hidden"}>
-                    <FilterForm />
+                    <FilterForm passToFilters={submitCriteria} />
                 </div>
             </div>
 }

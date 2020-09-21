@@ -4,7 +4,7 @@ import FilterBedBath from './FilterBedBath';
 import FilterHOA from './FilterHOA';
 import FilterSqft from './FilterSqft';
 
-function FilterForm() {
+function FilterForm(props) {
     const [formValues, setFormValues] = useState({
         priceMin: 0,
         priceMax: 1000000000,
@@ -17,9 +17,10 @@ function FilterForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        props.passToFilters(formValues);
     }
 
-    function applyPrice(priceMin, priceMax) {
+    function submitCriteria(priceMin, priceMax) {
         setFormValues(prevValues => {
             return {
                 ...prevValues,
@@ -31,7 +32,7 @@ function FilterForm() {
     }
 
     return <form onSubmit={handleSubmit}>
-                <FilterPrice onApplyPrice={applyPrice} />
+                <FilterPrice passToFilterForm={submitCriteria} />
                 <FilterBedBath />
                 <FilterHOA />
                 <FilterSqft />

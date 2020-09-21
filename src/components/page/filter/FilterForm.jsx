@@ -56,6 +56,7 @@ function FilterForm(props) {
     function submitHOACriteria(hoa) {
         setFormValues(prevValues => {
             return {
+                ...prevValues,
                 HOA: hoa
             }
 

@@ -107,7 +107,7 @@ let properties = [
     {
         id: 6,
         address: {
-            streetInfo: "1300 chesapeake Dr.",
+            streetInfo: "1300 Chesapeake Dr.",
             city: "Atlanta",
             state: "GA",
             zip: "30325"
@@ -166,6 +166,90 @@ let properties = [
         HOA: true,
         sqft: 1991,
         description: "This house is great to look at, but admittedly hard to sleep in. We don't recommend anyone buy this house unless they have a degree in mathematics. Two car garage and cage in backyard for pets or children. Call now for a tour!"
+    },
+    {
+        id: 9,
+        address: {
+            streetInfo: "345 Excalibur Way",
+            city: "Sandy Springs",
+            state: "GA",
+            zip: "30379"
+        },
+        imgs: [
+            {
+                src: "./imgs/large_pool_house-345_excalibur.jpg",
+                alt: "The back of a parge house and its pool area at 345 Excalibur Way"
+            }
+        ],
+        price: 950000,
+        bedrooms: 6,
+        bathrooms: 5,
+        HOA: true,
+        sqft: 2450,
+        description: "This place has a pool. Not sold? Why not? You too good for a pool? Okay fine, it's also really big. Does that help? No? Are you serious? Get outta here! We think you'll love it, so call us now!"
+    },
+    {
+        id: 10,
+        address: {
+            streetInfo: "300 Lakeview Terr.",
+            city: "Atlanta",
+            state: "GA",
+            zip: "30335"
+        },
+        imgs: [
+            {
+                src: "./imgs/lake_house-300_lakeview.jpg",
+                alt: "Lake house at 300 Lakeview Terr."
+            }
+        ],
+        price: 99500,
+        bedrooms: 2,
+        bathrooms: 1,
+        HOA: false,
+        sqft: 900,
+        description: "Canoe included! Enjoy the view of the lake from your front (and only) windows in this beautiful and newly remodeled cabin. Two car garage and cage in backyard for pets or children. Call now for a tour!"
+    },
+    {
+        id: 11,
+        address: {
+            streetInfo: "4125 Canyon Dr.",
+            city: "Atlanta",
+            state: "GA",
+            zip: "30305"
+        },
+        imgs: [
+            {
+                src: "./imgs/emoji_house-4125_canyon.jpg",
+                alt: "Pink emoji house at 4125 Canyon Dr."
+            }
+        ],
+        price: 525000,
+        bedrooms: 3,
+        bathrooms: 2,
+        HOA: false,
+        sqft: 1800,
+        description: "The curb appeal here speaks for itself! If you want a home where the neighbors already hate you, look no further than this stylish home. Two car garage and cage in backyard for pets or children. Call now for a tour!"
+    },
+    {
+        id: 12,
+        address: {
+            streetInfo: "875 Fulshear Pl.",
+            city: "Atlanta",
+            state: "GA",
+            zip: "30306"
+        },
+        imgs: [
+            {
+                src: "./imgs/crime-scene-house.jpg",
+                alt: "White house at 875 Fulshear Pl."
+            }
+        ],
+        price: 555000,
+        bedrooms: 4,
+        bathrooms: 3.5,
+        HOA: false,
+        sqft: 1680,
+        description: "Don't mind the crime scene tape. This place is move-in ready, as long as you don't mind living in a construction zone. Two car garage and cage in backyard for pets or children. Call now for a tour!"
     }
 ];
 

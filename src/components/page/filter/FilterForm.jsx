@@ -16,11 +16,11 @@ function FilterForm(props) {
     });
 
     function handleSubmit(e) {
-        e.preventDefault();
+        e.preventDefault(); 
         props.passToFilters(formValues);
     }
 
-    function submitCriteria(priceMin, priceMax) {
+    function submitPriceCriteria(priceMin, priceMax) {
         setFormValues(prevValues => {
             return {
                 ...prevValues,
@@ -31,13 +31,44 @@ function FilterForm(props) {
         });
     }
 
+    function submitSqftCriteria(sqftMin, sqftMax) {
+        setFormValues(prevValues => {
+            return {
+                ...prevValues,
+                sqftMin: sqftMin,
+                sqftMax: sqftMax
+            }
+
+        });
+    }
+
+    function submitBedsBathsCriteria(bedsMin, bathsMin) {
+        setFormValues(prevValues => {
+            return {
+                ...prevValues,
+                bedsMin: bedsMin,
+                bathsMin: bathsMin
+            }
+
+        });
+    }
+
+    function submitHOACriteria(hoa) {
+        setFormValues(prevValues => {
+            return {
+                HOA: hoa
+            }
+
+        });
+    }
+
     return <form onSubmit={handleSubmit}>
-                <FilterPrice passToFilterForm={submitCriteria} />
-                <FilterBedBath />
-                <FilterHOA />
-                <FilterSqft />
+                <FilterPrice passToFilterForm={submitPriceCriteria} />
+                <FilterBedBath passToFilterForm={submitBedsBathsCriteria} />
+                <FilterHOA passToFilterForm={submitHOACriteria} />
+                <FilterSqft passToFilterForm={submitSqftCriteria} />
                 <div id="form-btns">
-                    <button id="btn-clear">Clear</button>
+                    {/* <button id="btn-clear">Clear</button> */}
                     <button id="btn-apply">Apply</button>
                 </div>
             </form>

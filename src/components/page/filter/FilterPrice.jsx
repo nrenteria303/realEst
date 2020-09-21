@@ -16,7 +16,7 @@ function FormPrice(props) {
         });
     }
 
-    function submitPrice(e) {
+    function submitPrice() {
         props.passToFilterForm(parseInt(price.priceMin, 10), parseInt(price.priceMax, 10));
     }
     

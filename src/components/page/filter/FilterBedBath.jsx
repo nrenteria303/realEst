@@ -1,12 +1,33 @@
 import React, {useState} from 'react';
 
-function FilterBedBath() {
-    return <fieldset id="form-beds-baths" className="form-opt">
+function FilterBedBath(props) {
+    const [bedBathValues, setBedBathValues] = useState(
+        {
+            bedsMin: 1,
+            bathsMin: 1
+        }
+    );
+
+    function handleChange(e) {
+        const {name, value} = e.target;
+        setBedBathValues(prevValue => {
+            return {
+                ...prevValue,
+                [name]: value
+            }
+        });
+    }
+
+    function submitBedsBaths() {
+        props.passToFilterForm(parseInt(bedBathValues.bedsMin, 10), parseInt(bedBathValues.bathsMin, 10));
+    }
+
+    return <fieldset onBlur={submitBedsBaths} id="form-beds-baths" className="form-opt">
                 <legend>Beds &amp; Baths</legend>
                 <div>
                     <label htmlFor="beds-min">beds:</label>
                     &nbsp;
-                    <select id="beds-min" name="beds-min">
+                    <select id="beds-min" name="bedsMin" onChange={handleChange}>
                         <option value="1">1+</option>
                         <option value="2">2+</option>
                         <option value="3">3+</option>
@@ -21,7 +42,7 @@ function FilterBedBath() {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label htmlFor="baths-min">baths:</label>
                     &nbsp;
-                    <select id="baths-min" name="baths-min">
+                    <select id="baths-min" name="bathsMin" onChange={handleChange}>
                         <option value="1">1+</option>
                         <option value="2">2+</option>
                         <option value="3">3+</option>

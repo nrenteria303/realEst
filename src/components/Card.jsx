@@ -4,6 +4,11 @@ import CardDetails from './CardDetails';
 import CardImgMain from './CardImgMain';
 
 function Cards(props) {
+
+    function deployModal() {
+        props.passModalToApp();
+    }
+
     return <div className="property-card">
         <CardHead streetInfo={props.streetInfo} />
         <CardImgMain 
@@ -16,6 +21,7 @@ function Cards(props) {
             bathrooms={props.bathrooms}
             sqft={props.sqft}
             description={props.description.substring(0, 80)}
+            passModalToCard={deployModal}
         />
     </div>
 }

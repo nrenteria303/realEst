@@ -3,11 +3,25 @@ import Header from './page/Header';
 import Footer from './page/Footer';
 import Card from './Card';
 import NoResults from './page/NoResults';
+import Modal from './page/Modal';
+import usdFilter from './usdFilter';
 import properties from '../data/properties';
 
 function App() {
 
     const [filteredProperties, setFilteredProperties] = useState(properties);
+    const [modalIsShowing, setModalIsShowing] = useState(false);
+    const [modalActive, setModalActive] = useState(properties[0]);
+
+    function deployModal(key) {
+        setModalIsShowing(true);
+        let active = properties.filter(home => home.id === key);
+        setModalActive(active[0]);
+    }
+
+    function handleModalClose() {
+        setModalIsShowing(false);
+    }
 
     function createCard(card) {
         return <Card 
@@ -21,6 +35,7 @@ function App() {
             bathrooms={card.bathrooms}
             description={card.description}
             sqft={card.sqft}
+            passModalToApp={() => deployModal(card.id)}
         />
     }
 
@@ -56,6 +71,22 @@ function App() {
             {(filteredProperties.length === 0) ? <NoResults /> : filteredProperties.map(createCard)}
         </main>
         <Footer />
+        <Modal 
+            isShowing={modalIsShowing}
+            passCloseToApp={handleModalClose}
+            imgSrc={modalActive.imgs[0].src}
+            imgAlt={modalActive.imgs[0].alt}
+            streetInfo={modalActive.address.streetInfo}
+            city={modalActive.address.city }
+            state={modalActive.address.state}
+            zip={modalActive.address.zip}
+            price={usdFilter(modalActive.price)}
+            sqft={modalActive.sqft}
+            beds={modalActive.bedrooms}
+            baths={modalActive.bathrooms}
+            HOA={(modalActive.HOA) ? "Yes" : "No"}
+            description={modalActive.description}
+        />
     </div>
 }
 

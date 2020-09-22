@@ -65,7 +65,7 @@ let properties = [
     {
         id: 4,
         address: {
-            streetInfo: "9100 Manhattan Ave.",
+            streetInfo: "910 Manhattan Ave.",
             city: "Atlanta",
             state: "GA",
             zip: "30326"
@@ -233,15 +233,15 @@ let properties = [
     {
         id: 12,
         address: {
-            streetInfo: "875 Fulshear Pl.",
-            city: "Atlanta",
+            streetInfo: "742 Evergreen Terr.",
+            city: "Springfield",
             state: "GA",
             zip: "30306"
         },
         imgs: [
             {
                 src: "./imgs/crime-scene-house.jpg",
-                alt: "White house at 875 Fulshear Pl."
+                alt: "White house at 742 Evergreen"
             }
         ],
         price: 555000,

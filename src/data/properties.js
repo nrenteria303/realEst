@@ -65,7 +65,7 @@ let properties = [
     {
         id: 4,
         address: {
-            streetInfo: "911 Manhattan Ave.",
+            streetInfo: "9100 Manhattan Ave.",
             city: "Atlanta",
             state: "GA",
             zip: "30326"

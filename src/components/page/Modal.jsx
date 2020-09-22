@@ -20,6 +20,7 @@ function Modal(props) {
                 </div>
             </div>
             <div id="modal-details-desc">
+                <h3>At a Glance</h3>
                 <div className="modal-details">
                     <p><strong>Asking Price:</strong> {props.price}</p>
                     <p><strong>Square Footage:</strong> {props.sqft}</p>
@@ -28,6 +29,7 @@ function Modal(props) {
                     <p><strong>HOA Controlled:</strong> {props.HOA}</p>
                 </div>
                 <p className="modal-desc">{props.description}</p>
+                <p className="modal-call"><strong>Call:</strong> (303) 323-5033</p>
             </div>
         </div>
     </div>;

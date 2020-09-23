@@ -347,28 +347,31 @@ footer a:hover {
 }
 
 .modal-cont {
-    width: 95vw;
+    width: 100vw;
     max-width: 1200px;
     height: 92vh;
     max-height: 640px;
     overflow-y: auto;
-    border-radius: 30px;
     background-color: #e6fbff;
     align-self: center;
     position: relative;
 }
 
 .modal-cont svg {
-    position: absolute;
+    position: fixed;
     right: 16px;
-    top: 16px;
+    top: 38px;
     cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(27, 27, 27, 0.65);
+    border-radius: 50%;
+    padding: 2px;
 }
 
 .modal-img-cont {
     width: 98%;
-    max-width: 600px;
-    margin: 50px auto 8px;
+    max-width: 650px;
+    margin: 0 auto 8px;
 }
 
 #img-display {
@@ -387,7 +390,7 @@ footer a:hover {
 
 .modal-address,
 .modal-details {
-    max-width: 360px;
+    max-width: 300px;
     border-bottom: solid 1px #320E3B;
     margin: 0 auto;
     padding: 10px 48px;
@@ -422,6 +425,10 @@ footer a:hover {
     #modal-img-address,
     #modal-details-desc {
         align-self: center;
+    }
+    .modal-cont svg {
+        font-size: 2.4rem;
+        right: 5%;
     }
     .modal-address {
         border-bottom: none;

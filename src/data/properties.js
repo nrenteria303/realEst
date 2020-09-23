@@ -31,7 +31,7 @@ let properties = [
         imgs: [
             {
                 src: "./imgs/large_beige_house-4598.jpg",
-                alt: "Blue House at 123 Fake St."
+                alt: "Beige house at 4598 Peachtree"
             }
         ],
         price: 750000,
@@ -52,7 +52,7 @@ let properties = [
         imgs: [
             {
                 src: "./imgs/beige_brick_house-1400.jpg",
-                alt: "Blue House at 123 Fake St."
+                alt: "Brick house at 1400 Briarcliff"
             }
         ],
         price: 299000,
@@ -73,7 +73,7 @@ let properties = [
         imgs: [
             {
                 src: "./imgs/large_white_house-911.jpg",
-                alt: "Blue House at 123 Fake St."
+                alt: "White house at 910 Manhattan"
             }
         ],
         price: 1275000,

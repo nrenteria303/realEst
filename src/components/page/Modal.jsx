@@ -5,6 +5,7 @@ function Modal(props) {
 
     function handleCloseClick() {
         props.passCloseToApp();
+        document.querySelector(".modal-cont").scrollTop = 0;
     }
 
     return <div id="modal-outer" className={props.isShowing ? "modal-showing" : "modal-hidden"}>

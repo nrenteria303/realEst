@@ -185,6 +185,12 @@ main {
     justify-content: space-between;
 }
 
+@media (max-width: 360px) {
+    main {
+        padding: 20px 4px 0;
+    }
+}
+
 .no-results {
     text-align: center;
     width: 100%;
@@ -221,6 +227,12 @@ main {
     text-align: center;
     font-size: 1.5rem;
     margin: 6px auto 0;
+}
+
+@media (max-width: 360px) {
+    .card-head h3 {
+        font-size: 1.225rem;
+    }
 }
 
 .img-main {

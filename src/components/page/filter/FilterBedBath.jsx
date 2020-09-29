@@ -28,7 +28,7 @@ function FilterBedBath(props) {
                     <label htmlFor="beds-min">beds:</label>
                     &nbsp;
                     <select id="beds-min" name="bedsMin" onChange={handleChange}>
-                        <option value="1">1+</option>
+                        <option value="1" selected={props.isCleared}>1+</option>
                         <option value="2">2+</option>
                         <option value="3">3+</option>
                         <option value="4">4+</option>
@@ -43,7 +43,7 @@ function FilterBedBath(props) {
                     <label htmlFor="baths-min">baths:</label>
                     &nbsp;
                     <select id="baths-min" name="bathsMin" onChange={handleChange}>
-                        <option value="1">1+</option>
+                        <option value="1" selected={props.isCleared}>1+</option>
                         <option value="2">2+</option>
                         <option value="3">3+</option>
                         <option value="4">4+</option>

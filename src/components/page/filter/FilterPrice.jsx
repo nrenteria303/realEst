@@ -7,6 +7,12 @@ function FormPrice(props) {
     });
 
     function handleChange(e) {
+        if (props.isCleared) {
+            setPrice({
+                priceMin: "",
+                priceMax: ""
+            });
+        }
         const {name, value} = e.target;
         setPrice(prevValue => {
             return {
@@ -14,6 +20,7 @@ function FormPrice(props) {
                 [name]: value
             }
         });
+        submitPrice();
     }
 
     function submitPrice() {
@@ -31,7 +38,7 @@ function FormPrice(props) {
                         max="5000000" 
                         step="10000" 
                         placeholder="min" 
-                        value={price.priceMin}
+                        value={(props.isCleared) ? "" : price.priceMin}
                         onChange={handleChange}
                     />
                     &nbsp;-&nbsp;
@@ -43,7 +50,7 @@ function FormPrice(props) {
                         max="5000000" 
                         step="10000" 
                         placeholder="max" 
-                        value={price.priceMax}
+                        value={(props.isCleared) ? "" : price.priceMax}
                         onChange={handleChange}
                     />
                 </div>

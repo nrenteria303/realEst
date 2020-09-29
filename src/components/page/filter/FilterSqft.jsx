@@ -7,6 +7,12 @@ function FilterSqft(props) {
     });
 
     function handleChange(e) {
+        if (props.isCleared) {
+            setSqft({
+                sqftMin: "",
+                sqftMax: ""
+            });
+        }
         const {name, value} = e.target;
         setSqft(prevValue => {
             return {
@@ -32,6 +38,7 @@ function FilterSqft(props) {
                         step="50" 
                         placeholder="min" 
                         onChange={handleChange}
+                        value={(props.isCleared) ? "" : sqft.sqftMin}
                     />
                     &nbsp;-&nbsp;
                     <input 
@@ -43,6 +50,7 @@ function FilterSqft(props) {
                     step="50" 
                     placeholder="max" 
                     onChange={handleChange}
+                    value={(props.isCleared) ? "" : sqft.sqftMax}
                 />
                 </div>
             </fieldset>

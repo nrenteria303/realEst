@@ -1,3 +1,4 @@
+// Takes integer and returns it w/ commas and dollar sign 
 function usdFilter(int) {
     let arr = int.toString().split("");
     arr.splice(arr.length - 3, 0, ",");

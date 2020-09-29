@@ -14,6 +14,7 @@ function FilterForm(props) {
         sqftMin: 0,
         sqftMax: 20000
     });
+    const [formIsCleared, setFormIsCleared] = useState(true)
 
     function handleSubmit(e) {
         e.preventDefault(); 
@@ -21,6 +22,7 @@ function FilterForm(props) {
     }
 
     function submitPriceCriteria(priceMin, priceMax) {
+        setFormIsCleared(false);
         setFormValues(prevValues => {
             return {
                 ...prevValues,
@@ -32,6 +34,7 @@ function FilterForm(props) {
     }
 
     function submitSqftCriteria(sqftMin, sqftMax) {
+        setFormIsCleared(false);
         setFormValues(prevValues => {
             return {
                 ...prevValues,
@@ -43,6 +46,7 @@ function FilterForm(props) {
     }
 
     function submitBedsBathsCriteria(bedsMin, bathsMin) {
+        setFormIsCleared(false);
         setFormValues(prevValues => {
             return {
                 ...prevValues,
@@ -54,6 +58,7 @@ function FilterForm(props) {
     }
 
     function submitHOACriteria(hoa) {
+        setFormIsCleared(false);
         setFormValues(prevValues => {
             return {
                 ...prevValues,
@@ -63,13 +68,26 @@ function FilterForm(props) {
         });
     }
 
+    function clearForm() {
+        setFormIsCleared(true);
+        setFormValues({
+            priceMin: 0,
+            priceMax: 1000000000,
+            HOA: '',
+            bedsMin: 1,
+            bathsMin: 1,
+            sqftMin: 0,
+            sqftMax: 20000
+        });
+    }
+
     return <form onSubmit={handleSubmit}>
-                <FilterPrice passToFilterForm={submitPriceCriteria} />
-                <FilterBedBath passToFilterForm={submitBedsBathsCriteria} />
-                <FilterHOA passToFilterForm={submitHOACriteria} />
-                <FilterSqft passToFilterForm={submitSqftCriteria} />
+                <FilterPrice isCleared={formIsCleared} passToFilterForm={submitPriceCriteria}/>
+                <FilterBedBath isCleared={formIsCleared} passToFilterForm={submitBedsBathsCriteria} />
+                <FilterHOA isCleared={formIsCleared} passToFilterForm={submitHOACriteria} />
+                <FilterSqft isCleared={formIsCleared} passToFilterForm={submitSqftCriteria} />
                 <div id="form-btns">
-                    {/* <button id="btn-clear">Clear</button> */}
+                    <div onClick={clearForm} id="btn-clear">Clear</div>
                     <button id="btn-apply">Apply</button>
                 </div>
             </form>

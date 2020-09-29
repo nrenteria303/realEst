@@ -17,7 +17,7 @@ function FilterHOA(props) {
                     <label htmlFor="hoa">HOA?</label>
                     &nbsp;
                     <select id="hoa" name="hoa" onChange={handleChange}>
-                        <option value="">-- select --</option>
+                        <option value="" selected={props.isCleared}>-- select --</option>
                         <option value="true">Yes please!</option>
                         <option value="false">No way!</option>
                     </select>

@@ -12,6 +12,7 @@ function App() {
     const [filteredProperties, setFilteredProperties] = useState(properties);
     const [modalIsShowing, setModalIsShowing] = useState(false);
     const [modalActive, setModalActive] = useState(properties[0]);
+    const [activeImg, setActiveImg] = useState(0);
 
     function deployModal(key) {
         setModalIsShowing(true);
@@ -21,6 +22,7 @@ function App() {
 
     function handleModalClose() {
         setModalIsShowing(false);
+        setActiveImg(0);
     }
 
     function createCard(card) {
@@ -65,6 +67,26 @@ function App() {
         setFilteredProperties(newFilteredProperties);
     }
 
+    function imgNavLeft(finalImgIndex) {
+        if (activeImg === 0) {
+            setActiveImg(finalImgIndex)
+        } else {
+            setActiveImg(activeImg - 1)
+        }
+    }
+
+    function imgNavRight(finalImgIndex) {
+        if (activeImg === finalImgIndex) {
+            setActiveImg(0)
+        } else {
+            setActiveImg(activeImg + 1)
+        }
+    }
+
+    function dotImgNav(key) {
+        setActiveImg(key);
+    }
+
     return <div>
         <Header passToApp={showHomes} />
         <main>
@@ -74,8 +96,8 @@ function App() {
         <Modal 
             isShowing={modalIsShowing}
             passCloseToApp={handleModalClose}
-            imgSrc={modalActive.imgs[0].src}
-            imgAlt={modalActive.imgs[0].alt}
+            imgSrc={modalActive.imgs[activeImg].src}
+            imgAlt={modalActive.imgs[activeImg].alt}
             streetInfo={modalActive.address.streetInfo}
             city={modalActive.address.city }
             state={modalActive.address.state}
@@ -86,6 +108,10 @@ function App() {
             baths={modalActive.bathrooms}
             HOA={(modalActive.HOA) ? "Yes" : "No"}
             description={modalActive.description}
+            imgCount={modalActive.imgs.length}
+            imgNavLeft={() => imgNavLeft(modalActive.imgs.length -1)}
+            imgNavRight={() => imgNavRight(modalActive.imgs.length -1)}
+            dotClick={dotImgNav}
         />
     </div>
 }

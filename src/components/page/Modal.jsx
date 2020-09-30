@@ -8,12 +8,38 @@ function Modal(props) {
         document.querySelector(".modal-cont").scrollTop = 0;
     }
 
+    let dotDivs = [];
+
+    function handleDotClick(index) {
+        props.dotClick(index)
+    }
+
+    function outputDots(numImgs) {
+        for (let i = 0; i < numImgs; i++) {
+            dotDivs.push(<div onClick={handleDotClick(i)} className="nav-dot" key={i}></div>);
+        }
+        return dotDivs;
+    }
+
+    function navLeft() {
+        props.imgNavLeft();
+    }
+
+    function navRight() {
+        props.imgNavRight();
+    }
+
     return <div id="modal-outer" className={props.isShowing ? "modal-showing" : "modal-hidden"}>
         <div className="modal-cont">
             <CloseIcon onClick={handleCloseClick} />
             <div id="modal-img-address">
                 <div className="modal-img-cont">
+                    <div id="modal-img-left" onClick={navLeft}>&#10094;</div>
+                    <div id="modal-img-right" onClick={navRight}>&#10095;</div>
                     <img id="img-display" src={props.imgSrc} alt={props.imgAlt} />
+                    <div id="img-nav-dots">
+                        {/* {outputDots(props.imgCount)} */}
+                    </div>
                 </div>
                 <div className="modal-address">
                     <p>{props.streetInfo}</p>

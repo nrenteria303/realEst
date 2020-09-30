@@ -11,6 +11,26 @@ let properties = [
             {
                 src: "./imgs/blue_house-123.jpg",
                 alt: "Blue House at 123 Fake St."
+            },
+            {
+                src: "./imgs/interior_living_grey.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_black.jpg",
+                alt: "A bathroom with a black color palate"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 250000,
@@ -32,6 +52,34 @@ let properties = [
             {
                 src: "./imgs/large_beige_house-4598.jpg",
                 alt: "Beige house at 4598 Peachtree"
+            },
+            {
+                src: "./imgs/interior_living_ground_igloo.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 750000,
@@ -53,6 +101,26 @@ let properties = [
             {
                 src: "./imgs/beige_brick_house-1400.jpg",
                 alt: "Brick house at 1400 Briarcliff"
+            },
+            {
+                src: "./imgs/interior_living_kitchen_stair.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_white.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_black.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 299000,
@@ -74,6 +142,30 @@ let properties = [
             {
                 src: "./imgs/large_white_house-911.jpg",
                 alt: "White house at 910 Manhattan"
+            },
+            {
+                src: "./imgs/interior_living_grey.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_white.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
             }
         ],
         price: 1275000,
@@ -95,6 +187,30 @@ let properties = [
             {
                 src: "./imgs/shack.jpg",
                 alt: "Cozy shack at 5526 Liverpool Ln."
+            },
+            {
+                src: "./imgs/interior_living_ground_igloo.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 150000,
@@ -116,6 +232,30 @@ let properties = [
             {
                 src: "./imgs/white_house-1300-chesapeake.jpg",
                 alt: "White house at 1300 Chesapeake"
+            },
+            {
+                src: "./imgs/interior_living_large.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
             }
         ],
         price: 650000,
@@ -137,6 +277,30 @@ let properties = [
             {
                 src: "./imgs/sunset_home-250_asheville.jpg",
                 alt: "Large home with acreage at 250 Asheville Pl."
+            },
+            {
+                src: "./imgs/interior_living_ground_igloo.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_white.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_black.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 475000,
@@ -158,6 +322,30 @@ let properties = [
             {
                 src: "./imgs/geo_home-420-escher.jpg",
                 alt: "Weird geometric home at 420 Escher Ct."
+            },
+            {
+                src: "./imgs/interior_living_grey.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 865000,
@@ -179,6 +367,30 @@ let properties = [
             {
                 src: "./imgs/large_pool_house-345_excalibur.jpg",
                 alt: "The back of a parge house and its pool area at 345 Excalibur Way"
+            },
+            {
+                src: "./imgs/interior_living_large.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 950000,
@@ -200,6 +412,14 @@ let properties = [
             {
                 src: "./imgs/lake_house-300_lakeview.jpg",
                 alt: "Lake house at 300 Lakeview Terr."
+            },
+            {
+                src: "./imgs/outhouse.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/backyard_simple.jpg",
+                alt: "Small backyard with grass and fence"
             }
         ],
         price: 99500,
@@ -221,6 +441,26 @@ let properties = [
             {
                 src: "./imgs/emoji_house-4125_canyon.jpg",
                 alt: "Pink emoji house at 4125 Canyon Dr."
+            },
+            {
+                src: "./imgs/interior_living_ground_igloo.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_dining.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
             }
         ],
         price: 525000,
@@ -242,6 +482,30 @@ let properties = [
             {
                 src: "./imgs/crime-scene-house.jpg",
                 alt: "White house at 742 Evergreen"
+            },
+            {
+                src: "./imgs/interior_living_grey.jpg",
+                alt: "A living room interior with a gray color palate"
+            },
+            {
+                src: "./imgs/interior_kitchen_white.jpg",
+                alt: "A cozy kitchen and dining room area"
+            },
+            {
+                src: "./imgs/interior_bathroom_enormous.jpg",
+                alt: "A fancy bathroom that is enormous and modern"
+            },
+            {
+                src: "./imgs/interior_bedroom_beige.jpg",
+                alt: "Master bedroom with sliding glass door and grey color palate"
+            },
+            {
+                src: "./imgs/interior_second_bedroom_dark.jpg",
+                alt: "A second bedroom with slanty ceilings and a bed"
+            },
+            {
+                src: "./imgs/backyard_fancy_wooded.jpg",
+                alt: "Backyard with nice furniture surrounded by woods"
             }
         ],
         price: 555000,

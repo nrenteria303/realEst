@@ -8,18 +8,18 @@ function Modal(props) {
         document.querySelector(".modal-cont").scrollTop = 0;
     }
 
-    let dotDivs = [];
+    // let dotDivs = [];
 
-    function handleDotClick(index) {
-        props.dotClick(index)
-    }
+    // function handleDotClick(index) {
+    //     props.dotClick(index)
+    // }
 
-    function outputDots(numImgs) {
-        for (let i = 0; i < numImgs; i++) {
-            dotDivs.push(<div onClick={handleDotClick(i)} className="nav-dot" key={i}></div>);
-        }
-        return dotDivs;
-    }
+    // function outputDots(numImgs) {
+    //     for (let i = 0; i < numImgs; i++) {
+    //         dotDivs.push(<div onClick={handleDotClick(i)} className="nav-dot" key={i}></div>);
+    //     }
+    //     return dotDivs;
+    // }
 
     function navLeft() {
         props.imgNavLeft();

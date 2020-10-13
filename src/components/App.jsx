@@ -83,8 +83,29 @@ function App() {
         }
     }
 
+    // ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+    // IDEA: Don't add navDots on Modal.jsx, add as nested child in <Modal></Modal>
+    // ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
     function dotImgNav(key) {
         setActiveImg(key);
+    }
+
+    let dotDivs = [];
+
+    let dotStyleInactive = {
+        backgroundColor: "#b3b3b3"
+    }
+
+    let dotStyleActive = {
+        backgroundColor: "#4d4d4d"
+    }
+
+    function outputDots(numImgs) {
+        for (let i = 0; i < numImgs; i++) {
+            dotDivs.push(<div className="nav-dot" key={i} onClick={() => dotImgNav(i)} style={(i === activeImg) ? dotStyleActive : dotStyleInactive}></div>);
+        }
+        return dotDivs;
     }
 
     return <div>
@@ -110,9 +131,11 @@ function App() {
             description={modalActive.description}
             imgCount={modalActive.imgs.length}
             imgNavLeft={() => imgNavLeft(modalActive.imgs.length -1)}
-            imgNavRight={() => imgNavRight(modalActive.imgs.length -1)}
-            dotClick={dotImgNav}
-        />
+            imgNavRight={() => imgNavRight(modalActive.imgs.length -1)} >
+            <div id="img-nav-dots">
+                {outputDots(modalActive.imgs.length)}
+            </div>
+        </Modal>
     </div>
 }
 

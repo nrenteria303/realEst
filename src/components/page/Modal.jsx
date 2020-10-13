@@ -8,19 +8,6 @@ function Modal(props) {
         document.querySelector(".modal-cont").scrollTop = 0;
     }
 
-    // let dotDivs = [];
-
-    // function handleDotClick(index) {
-    //     props.dotClick(index)
-    // }
-
-    // function outputDots(numImgs) {
-    //     for (let i = 0; i < numImgs; i++) {
-    //         dotDivs.push(<div onClick={handleDotClick(i)} className="nav-dot" key={i}></div>);
-    //     }
-    //     return dotDivs;
-    // }
-
     function navLeft() {
         props.imgNavLeft();
     }
@@ -37,9 +24,7 @@ function Modal(props) {
                     <div id="modal-img-left" onClick={navLeft}>&#10094;</div>
                     <div id="modal-img-right" onClick={navRight}>&#10095;</div>
                     <img id="img-display" src={props.imgSrc} alt={props.imgAlt} />
-                    <div id="img-nav-dots">
-                        {/* {outputDots(props.imgCount)} */}
-                    </div>
+                    {props.children}
                 </div>
                 <div className="modal-address">
                     <p>{props.streetInfo}</p>

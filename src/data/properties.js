@@ -468,7 +468,7 @@ let properties = [
         bathrooms: 2,
         HOA: false,
         sqft: 1800,
-        description: "The curb appeal here speaks for itself! If you want a home where the neighbors already hate you, look no further than this stylish home. Two car garage and cage in backyard for pets or children. Call now for a tour!"
+        description: "The curb appeal here speaks for itself! If you want a home where the neighbors already hate you, look no further than this stylish gem. Two car garage and cage in backyard for pets or children. Call now for a tour!"
     },
     {
         id: 12,

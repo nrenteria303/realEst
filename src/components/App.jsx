@@ -83,10 +83,6 @@ function App() {
         }
     }
 
-    // ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
-    // IDEA: Don't add navDots on Modal.jsx, add as nested child in <Modal></Modal>
-    // ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
-
     function dotImgNav(key) {
         setActiveImg(key);
     }
